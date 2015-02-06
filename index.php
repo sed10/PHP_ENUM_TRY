@@ -19,22 +19,22 @@ class TestEnum
     private $value;
     private static $currentValue;
 
-    public static function TEST_ENUM_VALUE_1()
+    public static function testEnumValue1()
     {
         return self::makeValue(0);
     }
 
-    public static function TEST_ENUM_VALUE_2()
+    public static function testEnumValue2()
     {
         return self::makeValue(1);
     }
 
-    public static function TEST_ENUM_VALUE_3()
+    public static function testEnumValue3()
     {
         return self::makeValue(2);
     }
 
-    public static function TEST_ENUM_VALUE_4()
+    public static function testEnumValue4()
     {
         return self::makeValue(3);
     }
@@ -71,4 +71,4 @@ function testFunc1(TestEnum $testEnum)
     echo $testEnum;
 }
 
-testFunc1(TestEnum::TEST_ENUM_VALUE_4());
+testFunc1(TestEnum::testEnumValue4());  
